@@ -2218,7 +2218,7 @@ EXPORT_SYMBOL(user_path_at);
  *     allocated by getname. So we must hold the reference to it until all
  *     path-walking is complete.
  */
-static struct filename *
+struct filename *
 user_path_parent(int dfd, const char __user *path, struct nameidata *nd,
 		 unsigned int flags)
 {
